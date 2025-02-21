@@ -1,0 +1,20 @@
+[project]
+name = "mnist-demo-lxf"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "xx", email = "xx@gmail.com"},
+]
+dependencies = ["torch>=2.6.0", "torchvision>=0.21.0", "torchaudio>=2.6.0", "flask>=3.1.0", "Pillow>=11.1.0"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+# 设置国内镜像源
+[tool.pdm.repositories]
+default = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+
